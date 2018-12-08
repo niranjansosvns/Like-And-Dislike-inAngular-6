@@ -1,14 +1,14 @@
 <!-- dislike and like button via anchor tag -->
    <div>
 	    <a class="like" (click)="onClickLikeCount()" 
-	        [class.likeCountColor]="likeCount === 100">
+	        [class.likeCountColor]="likeCount >= 100">
 	    	<i class="glyphicon glyphicon-thumbs-up"></i>  
 	        Like <input id="qty1" class="qty1" name="qty1" readonly="readonly" type="text" 
 	        [value]="likeCount" >
 	    </a>
 
 	    <a class="dislike" (click)="onClickDislikeCount()"
-	        [class.dislikeCountColor]="dislikeCount === 50">
+	        [class.dislikeCountColor]="dislikeCount >= 50">
 	    	<i class="glyphicon glyphicon-thumbs-down"></i> 
 	        Dislike <input id="qty2" class="qty2"  name="qty2" readonly="readonly" type="text"
 	        [value]="dislikeCount" />

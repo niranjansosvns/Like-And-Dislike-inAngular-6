@@ -58,6 +58,6 @@ div {
 }
 /* change to only when like count is equal to 100 and dislike color equal to 50*/
 .likeCountColor, .dislikeCountColor  {
-        background-color: black;
+        background-color: blue;
         color:white;
 }
